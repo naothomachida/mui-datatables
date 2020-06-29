@@ -50,7 +50,7 @@ class Example extends React.Component {
           filter: false,
           sort: false,
           empty: true,
-          customBodyRenderLite: (dataIndex) => {
+          customBodyRender: (dataIndex) => {
             return (
               <button onClick={() => {
                 const { data } = this.state;
@@ -69,7 +69,7 @@ class Example extends React.Component {
           filter: false,
           sort: false,
           empty: true,
-          customBodyRenderLite: (dataIndex, rowIndex) => {
+          customBodyRender: (dataIndex, rowIndex) => {
             return (
               <button onClick={() => window.alert(`Clicked "Edit" for row ${rowIndex} with dataIndex of ${dataIndex}`)}>
                 Edit
@@ -116,7 +116,7 @@ class Example extends React.Component {
           filter: false,
           sort: false,
           empty: true,
-          customBodyRenderLite: (dataIndex) => {
+          customBodyRender: (dataIndex) => {
             return (
               <button onClick={() => {
                 const { data } = this.state;
